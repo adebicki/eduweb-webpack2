@@ -1,0 +1,23 @@
+{
+  "name": "eduweb-webpack2",
+  "version": "1.0.0",
+  "description": "Following eduweb tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adebicki/eduweb-webpack2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adebicki/eduweb-webpack2/issues"
+  },
+  "homepage": "https://github.com/adebicki/eduweb-webpack2#readme",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  }
+}
