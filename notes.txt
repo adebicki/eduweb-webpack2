@@ -1,0 +1,6 @@
+1.
+Manual webpack run:
+node_modules\.bin\webpack "src/js/app.js" "dist/budle.js"
+node_modules\.bin\webpack.cmd "src/js/app.js" "dist/budle.js"
+node_modules\webpack\bin\webpack.js "src/js/app.js" "dist/budle.js" [mac/linux?]
+
