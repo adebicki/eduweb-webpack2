@@ -13,4 +13,4 @@ Jeśli mamy skrypt np. "build", i "prebuild", to wykonanie build automatycznie w
 
 
 next:
-https://eduweb.pl/player/webpack-wydajna-praca-javascript/transpilacja-es6-do-es5
+https://eduweb.pl/player/webpack-wydajna-praca-javascript/korzystanie-z-webpack-dev-server

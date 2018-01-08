@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/adebicki/eduweb-webpack2#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.2",
     "webpack": "^3.10.0"
   }
 }
