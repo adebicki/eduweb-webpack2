@@ -33,4 +33,4 @@ w kursie dał dist i był folder fizyczny dist, ale to nic nie zmienia)
 
 
 next:
-https://eduweb.pl/player/webpack-wydajna-praca-javascript/importowanie-modulow-z-npm
+https://eduweb.pl/player/webpack-wydajna-praca-javascript/praca-z-handlebars
