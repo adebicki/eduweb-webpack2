@@ -26,6 +26,13 @@ module.exports = {
                         // plugins: [require('@babel/plugin-proposal-object-rest-spread')]
                     }
                 }
+            },
+            {
+                test: /\.hbs$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'handlebars-loader'
+                }
             }
         ]
     }
