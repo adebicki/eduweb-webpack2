@@ -33,4 +33,4 @@ w kursie dał dist i był folder fizyczny dist, ale to nic nie zmienia)
 
 
 next:
-https://eduweb.pl/player/webpack-wydajna-praca-javascript/kompilacja-sass-do-css
+https://eduweb.pl/player/webpack-wydajna-praca-javascript/praca-z-obrazkami-w-css
