@@ -43,6 +43,22 @@ module.exports = {
                 }, {
                     loader: "sass-loader" // compiles Sass to CSS
                 }]
+            },
+            // {
+            //     test: /\.(png|jpg|jpeg|gif|svg|eot|ttf|woff|woff2)$/,
+            //     use: {
+            //         loader: 'file-loader'
+            //     }
+            // }
+            {
+                test: /\.(png|jpg|jpeg|gif|svg|eot|ttf|woff|woff2)$/,
+                use: {
+                    loader: 'url-loader', // it uses file-loader!
+                    options: {
+                        limit: 10000, // if image smaller, then make it base64 in css
+                        name: "[name].[ext]"
+                    }
+                }
             }
         ]
     }

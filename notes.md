@@ -31,6 +31,10 @@ Jeśli skrypt js jest poza src, to nie uda nam się go dołączyć poprzez \<scr
 (o ile sie orientuję, to będzie serwowane z pamięci i nie ma nic wspólnego z fizycznymi folderami,
 w kursie dał dist i był folder fizyczny dist, ale to nic nie zmienia)
 
+raw-loader (np zamias css-loadera ?)
+file-loader - kopiuje plik znaleziony np w css (np png) i nadaje mu nazwę hash.png (może można skonfigurować?)
+url-loader (korzysta z file-loadera), może zmienić obrazek w css na base64, można też określić nazwę obrazka wynikowego
+Może sprawdź w google "list of webpack loaders" ?
 
 next:
-https://eduweb.pl/player/webpack-wydajna-praca-javascript/praca-z-obrazkami-w-css
+https://eduweb.pl/player/webpack-wydajna-praca-javascript/korzystanie-z-pluginow
