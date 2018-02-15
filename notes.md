@@ -38,6 +38,11 @@ url-loader (korzysta z file-loadera), może zmienić obrazek w css na base64, mo
 Może sprawdź w google "list of webpack loaders" ?
 https://github.com/webpack/docs/wiki/list-of-loaders
 
+###### html webpack plugin
+Generuje html (można mu podać szablon) i sam do niego dodaje odwołania do css i js w head i stopce.
+Problem jest taki, że odpalając webpack dev server w parametrze podajemy content base do folderu src, a wygenerowany
+plik będzie w dist, tak więc musimy odpalić apkę z localhost:8080/dist/index.html
+(localhost:8080 weźmie index.html z folderu src)
 
 next:
-https://eduweb.pl/player/webpack-wydajna-praca-javascript/korzystanie-z-pluginow
+https://eduweb.pl/player/webpack-wydajna-praca-javascript/tworzenie-wielu-bundli

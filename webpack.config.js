@@ -2,6 +2,7 @@ const path = require("path");
 // or:
 // const {resolve} = require("path"); // and later use resolve() instead of path.resolve();
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 
@@ -70,6 +71,9 @@ module.exports = {
 
     plugins: [
         new ExtractTextPlugin("styles.css"),
+        new HtmlWebpackPlugin({
+            template: "./src/index.html"
+        })
     ]
 
 };
