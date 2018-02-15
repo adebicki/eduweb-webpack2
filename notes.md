@@ -45,4 +45,4 @@ plik będzie w dist, tak więc musimy odpalić apkę z localhost:8080/dist/index
 (localhost:8080 weźmie index.html z folderu src)
 
 next:
-https://eduweb.pl/player/webpack-wydajna-praca-javascript/tworzenie-wielu-bundli
+https://eduweb.pl/player/webpack-wydajna-praca-javascript/prosty-serwer-do-podgladu-builda
