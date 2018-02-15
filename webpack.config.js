@@ -1,6 +1,7 @@
 const path = require("path");
 // or:
 // const {resolve} = require("path"); // and later use resolve() instead of path.resolve();
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
 
@@ -36,13 +37,17 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: [{
-                    loader: "style-loader" // creates style nodes from JS strings
-                }, {
-                    loader: "css-loader" // translates CSS into CommonJS
-                }, {
-                    loader: "sass-loader" // compiles Sass to CSS
-                }]
+                // use: [{
+                //     loader: "style-loader" // creates style nodes from JS strings
+                // }, {
+                //     loader: "css-loader" // translates CSS into CommonJS
+                // }, {
+                //     loader: "sass-loader" // compiles Sass to CSS
+                // }]
+                use: ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: "css-loader!sass-loader"
+                })
             },
             // {
             //     test: /\.(png|jpg|jpeg|gif|svg|eot|ttf|woff|woff2)$/,
@@ -61,6 +66,10 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+
+    plugins: [
+        new ExtractTextPlugin("styles.css"),
+    ]
 
 };

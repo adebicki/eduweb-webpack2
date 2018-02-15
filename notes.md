@@ -34,7 +34,10 @@ w kursie dał dist i był folder fizyczny dist, ale to nic nie zmienia)
 raw-loader (np zamias css-loadera ?)
 file-loader - kopiuje plik znaleziony np w css (np png) i nadaje mu nazwę hash.png (może można skonfigurować?)
 url-loader (korzysta z file-loadera), może zmienić obrazek w css na base64, można też określić nazwę obrazka wynikowego
+("The url-loader works like the file-loader, but can return a DataURL if the file is smaller than a byte limit"")
 Może sprawdź w google "list of webpack loaders" ?
+https://github.com/webpack/docs/wiki/list-of-loaders
+
 
 next:
 https://eduweb.pl/player/webpack-wydajna-praca-javascript/korzystanie-z-pluginow
