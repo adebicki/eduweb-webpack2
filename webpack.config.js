@@ -27,6 +27,8 @@ module.exports = function(env) {
             filename: prod ? "[name].[chunkhash].js" : "[name].js"
         },
 
+        devtool: prod ? "source-map" : "cheap-module-eval-source-map",
+
         module: {
             rules: [
                 {

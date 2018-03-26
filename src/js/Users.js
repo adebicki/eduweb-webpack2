@@ -20,6 +20,8 @@ function getUsers() {
 
 function getUsersHTML() {
 
+    console.log("W funkcji getUsersHTML");
+
     return getUsers();
 
 }

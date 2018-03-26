@@ -63,5 +63,16 @@ import "es6-promise/auto";
 od v2 weboacka tree shaking działa automatycznie
 usuwa nieużywane esportowane funkcje?
 
+###### source maps
+https://webpack.js.org/configuration/devtool/
+do webpack.config.js dodajemu sekcję devtool, np:
+devtool: "eval" - z konsoli przeglądarki (np jakiś console.log) będzie nas kierować do odpowiedniego pliku
+(w tym przypadku w kodzie wygenerowanym)
+nie wszystkie wartości nadają się na produkcję
+devtool: "cheap-module-eval-source-map" - kieruje do kodu oryginalnego
+devtool: "source-map" - nadaje się na produkcję
+devtool: prod ? "source-map" : "cheap-module-eval-source-map",
+jak jest eval, to source mapy są inlinowo (to chyba od tego zależy)
+
 next:
-https://eduweb.pl/player/webpack-wydajna-praca-javascript/korzystanie-z-sourcemap
+https://eduweb.pl/player/webpack-wydajna-praca-javascript/korzystanie-z-modulow-bez-importu

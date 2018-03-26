@@ -20,4 +20,9 @@ button.on("click", function() {
                     container.append(html);
                 });
         });
+
+    // getUsersHTML()
+    //     .then(html => {
+    //         container.append(html);
+    //     });
 });
