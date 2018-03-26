@@ -35,9 +35,10 @@ module.exports = function(env) {
                     use: {
                         loader: 'babel-loader',
                         options: {
-                            presets: ['es2015']
+                            presets: ['es2015'],
                             // presets: ['@babel/preset-env'],
                             // plugins: [require('@babel/plugin-proposal-object-rest-spread')]
+                            plugins: ['syntax-dynamic-import']
                         }
                     }
                 },

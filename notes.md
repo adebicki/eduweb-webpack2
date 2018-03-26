@@ -48,5 +48,17 @@ plik będzie w dist, tak więc musimy odpalić apkę z localhost:8080/dist/index
 npm install --save-dev http-server
 Prosty serwer www
 
+###### warunkowe ładowanie modułów
+można użyć składni eksperymentalnej gdzieś w kodzie, np w f-cji obsługi kliknięcia - funkcja:
+import(path-to-module).then(function(module){})
+babel się wykrzaczy, dlatego instalujemy:
+npm install --save-dev babel-plugin-syntax-dynamic-import
+dodajemy sekcję plugins dla babela w webpack.config.js - plugins: ['syntax-dynamic-import']
+to ma sens, jak jest jakiś duży fragment kodu, który jest potencjalnie niepotrzebny, dopiero jak user coś kliknie
+Wymaga polyfill dla promise (uzycie then)
+npm install --save es6-promise
+import "es6-promise/auto";
+
+
 next:
-https://eduweb.pl/player/webpack-wydajna-praca-javascript/asynchroniczne-ladowanie-modulow
+https://eduweb.pl/player/webpack-wydajna-praca-javascript/tree-shaking
