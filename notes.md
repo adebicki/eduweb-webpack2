@@ -44,5 +44,9 @@ Problem jest taki, że odpalając webpack dev server w parametrze podajemy conte
 plik będzie w dist, tak więc musimy odpalić apkę z localhost:8080/dist/index.html
 (localhost:8080 weźmie index.html z folderu src)
 
+###### prosty server
+npm install --save-dev http-server
+Prosty serwer www
+
 next:
-https://eduweb.pl/player/webpack-wydajna-praca-javascript/prosty-serwer-do-podgladu-builda
+https://eduweb.pl/player/webpack-wydajna-praca-javascript/asynchroniczne-ladowanie-modulow
