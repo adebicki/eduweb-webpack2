@@ -59,6 +59,9 @@ Wymaga polyfill dla promise (uzycie then)
 npm install --save es6-promise
 import "es6-promise/auto";
 
+###### tree shaking
+od v2 weboacka tree shaking działa automatycznie
+usuwa nieużywane esportowane funkcje?
 
 next:
-https://eduweb.pl/player/webpack-wydajna-praca-javascript/tree-shaking
+https://eduweb.pl/player/webpack-wydajna-praca-javascript/korzystanie-z-sourcemap
