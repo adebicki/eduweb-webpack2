@@ -1,4 +1,4 @@
-import $ from "jquery";
+// import $ from "jquery";
 import template from "./views/users.hbs";
 
 const API_URL = "http://jsonplaceholder.typicode.com/users";

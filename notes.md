@@ -74,5 +74,15 @@ devtool: "source-map" - nadaje się na produkcję
 devtool: prod ? "source-map" : "cheap-module-eval-source-map",
 jak jest eval, to source mapy są inlinowo (to chyba od tego zależy)
 
+###### Korzystanie z modułów bez importu
+Teraz mamy w jakimś module np. import $ from "jquery"; $ jest dostępne tylko w tym module
+A chemy mieć wszędzie dostępne pod $ bibliotekę jQuery bez importowania
+Możemy skorzystać z ProvidePlugin webpacka w sekcji plugins configa
+new webpack.ProvidePlugin({
+    $: "jquery",
+    jQuery: "jquery"
+})
+teraz $ i jQuery będą w modułach automatycznie dostępne
+
 next:
-https://eduweb.pl/player/webpack-wydajna-praca-javascript/korzystanie-z-modulow-bez-importu
+https://eduweb.pl/player/webpack-wydajna-praca-javascript/tworzenie-bibliotek

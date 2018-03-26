@@ -1,7 +1,7 @@
 import "../sass/main.scss";
 
 import "es6-promise/auto";
-import $ from "jquery";
+// import $ from "jquery";
 // import getUsersHTML from "./Users";
 
 let container = $(".container"),
