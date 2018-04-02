@@ -84,5 +84,8 @@ new webpack.ProvidePlugin({
 })
 teraz $ i jQuery będą w modułach automatycznie dostępne
 
-next:
-https://eduweb.pl/player/webpack-wydajna-praca-javascript/tworzenie-bibliotek
+###### THE END:
+
+Lista zasobów na temat Webpacka:
+
+https://github.com/webpack-contrib/awesome-webpack
