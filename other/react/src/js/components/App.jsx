@@ -1,6 +1,8 @@
 import Users from "./Users.jsx";
 import Button from "./Button.jsx";
 
+import React from 'react';
+
 class App extends React.Component {
     constructor(props) {
         super(props);

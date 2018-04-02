@@ -1,4 +1,6 @@
-import "../../sass/components/_users.scss";
+import styles from "../../sass/components/_users.scss";
+
+import React from 'react';
 
 class Users extends React.Component {
     constructor(props) {
@@ -9,7 +11,7 @@ class Users extends React.Component {
 
     render() {
         return (
-            <ul className="users">{this.state.html}</ul>
+            <ul className={styles.users}>{this.state.html}</ul>
         )
     }
 
@@ -17,10 +19,10 @@ class Users extends React.Component {
 
         this.getUsers().then(data => {
             let lis = data.map(user => (
-                <li className="user" key={user.id}>
-                    <span className="user__name">{user.name}</span>
-                    <span className="user__email">{user.email}</span>
-                    <span className="user__website"><a href="http://{user.website}">{user.website}</a></span>
+                <li className={styles.user} key={user.id}>
+                    <span className={styles.user__name}>{user.name}</span>
+                    <span className={styles.user__email}>{user.email}</span>
+                    <span className={styles.user__website}><a href="http://{user.website}">{user.website}</a></span>
                 </li>
             ));
 

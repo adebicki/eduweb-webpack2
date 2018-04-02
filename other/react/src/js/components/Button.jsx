@@ -1,9 +1,11 @@
-import "../../sass/components/_buttons.scss";
+import styles from "../../sass/components/_buttons.scss";
+
+import React from 'react';
 
 class Button extends React.Component {
     render() {
         return (
-            <button className="button" onClick={this.props.clickHandler}>{this.props.text}</button>
+            <button className={styles.button} onClick={this.props.clickHandler}>{this.props.text}</button>
         )
     }
 }

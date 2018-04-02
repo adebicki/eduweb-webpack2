@@ -11,7 +11,8 @@ module.exports = function(env) {
     return {
 
         entry: {
-            app: "./src/js/index.jsx"
+            app: "./src/js/index.jsx",
+            vendors: ["react", "react-dom", "es6-promise/auto", "whatwg-fetch"]
         },
 
         output: {
@@ -25,20 +26,28 @@ module.exports = function(env) {
         module: {
             rules: [
                 {
-                    test: /\.js$/,
+                    test: /\.jsx?$/,
                     exclude: /node_modules/,
                     use: {
                         loader: "babel-loader",
                         options: {
-                            presets: ["es2015"]
+                            presets: ["react", "es2015"]
                         }
                     }
                 },
                 {
-                    test: /\.scss$/,
+                    test: /main\.scss$/,
                     use: ExtractTextWebpackPlugin.extract({
                         fallback: "style-loader",
                         use: "css-loader!sass-loader"
+                    })
+                },
+                {
+                    test: /\.scss$/,
+                    exclude: /main\.scss$/,
+                    use: ExtractTextWebpackPlugin.extract({
+                        fallback: "style-loader",
+                        use: "css-loader?modules=true!sass-loader"
                     })
                 },
                 {
